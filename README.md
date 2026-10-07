@@ -53,4 +53,4 @@ Dann einfach die `index.html` im Browser öffnen.
 
 ## Lizenz
 
-*(z. B. MIT – nach Wunsch ergänzen)*
+[MIT](LICENSE).
