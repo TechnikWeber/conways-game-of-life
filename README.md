@@ -1,56 +1,59 @@
 # Conway's Game of Life
 
-Eine interaktive Browser-Umsetzung von John Conways berühmtem zellulären Automaten – komplett in HTML, CSS und JavaScript.
+<p>
+  <a href="https://technikweber.github.io/conways-game-of-life/"><img alt="Live demo" src="https://img.shields.io/badge/live%20demo-open-brightgreen"></a>
+  <img alt="Runs in the browser" src="https://img.shields.io/badge/runs%20in-the%20browser-blue">
+  <img alt="UI language: German" src="https://img.shields.io/badge/UI-Deutsch-informational">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
+</p>
 
-## 🎮 Live-Demo
+An interactive browser version of John Conway's famous cellular automaton — plain
+HTML, CSS and JavaScript in a single file.
 
-👉 **[Hier ausprobieren](https://technikweber.github.io/Conways-game-of-life/)**
+👉 **[Try it](https://technikweber.github.io/conways-game-of-life/)** ·
+**[Extended version](https://technikweber.github.io/conways-game-of-life/conways_game_of_life_extended.html)**
 
-Einfach den Link öffnen – das Spiel läuft direkt im Browser, keine Installation nötig.
+## What is the Game of Life?
 
-## Was ist Game of Life?
+Not a game in the usual sense, but a cellular automaton: a grid of cells that are either
+*alive* or *dead*. A few simple rules produce astonishingly complex patterns — gliders,
+oscillators, whole "machines" that build new ones.
 
-Game of Life ist kein Spiel im klassischen Sinn, sondern ein zellulärer Automat: ein Gitter aus Zellen, die entweder *lebendig* oder *tot* sind. Aus wenigen einfachen Regeln entstehen erstaunlich komplexe Muster – Gleiter, Oszillatoren, ganze "Maschinen", die sich selbst reproduzieren.
+## The rules
 
-## Die Regeln
+In every generation, each cell's fate is decided by its eight neighbours:
 
-In jeder Generation wird für jede Zelle anhand ihrer acht Nachbarn entschieden, was als Nächstes passiert:
+1. **Underpopulation:** a live cell with fewer than 2 live neighbours dies.
+2. **Survival:** a live cell with 2 or 3 live neighbours lives on.
+3. **Overpopulation:** a live cell with more than 3 live neighbours dies.
+4. **Reproduction:** a dead cell with exactly 3 live neighbours comes alive.
 
-1. **Unterbevölkerung:** Eine lebende Zelle mit weniger als 2 lebenden Nachbarn stirbt.
-2. **Überleben:** Eine lebende Zelle mit 2 oder 3 lebenden Nachbarn bleibt am Leben.
-3. **Überbevölkerung:** Eine lebende Zelle mit mehr als 3 lebenden Nachbarn stirbt.
-4. **Fortpflanzung:** Eine tote Zelle mit genau 3 lebenden Nachbarn wird lebendig.
+## Features
 
-## Funktionen
+- Click cells to set or clear them
+- Start/pause, single step, clear, random fill
+- Adjustable speed and cell size, grid on/off
+- Six colour schemes
+- Ten classic patterns to place: glider, blinker, toad, beacon, pulsar,
+  pentadecathlon, Gosper glider gun, acorn, R-pentomino, diehard
+- Generation and population counters
 
-- Zellen per Klick setzen und löschen
-- Simulation starten, pausieren und zurücksetzen
-- Anpassbare Geschwindigkeit
-- *(weitere Features hier ergänzen)*
+The **extended version** adds full screen, stepping back and forward in time, a
+statistics graph, drawing modes (pen, brush, spray, wave), painting while dragging and
+symmetry modes (mirrored, 4- and 8-fold radial).
 
-## Bedienung
+The interface is in German.
 
-- **Linksklick** auf eine Zelle, um sie zu (de)aktivieren
-- **Start/Pause** steuert die Simulation
-- **Reset** leert das Gitter
+## Run it locally
 
-## Lokal ausführen
-
-Da es sich um reines Frontend handelt, reicht es, die Datei direkt zu öffnen:
+Pure front end — clone and open the file in a browser:
 
 ```bash
-git clone https://github.com/technikweber/Conways-game-of-life.git
-cd Conways-game-of-life
+git clone https://github.com/TechnikWeber/conways-game-of-life.git
 ```
 
-Dann einfach die `index.html` im Browser öffnen.
+Then open `index.html` (or `conways_game_of_life_extended.html`).
 
-## Technik
-
-- HTML5 Canvas *(falls verwendet)*
-- Vanilla JavaScript
-- CSS
-
-## Lizenz
+## License
 
 [MIT](LICENSE).
