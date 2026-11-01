@@ -13,6 +13,13 @@ HTML, CSS and JavaScript in a single file.
 👉 **[Try it](https://technikweber.github.io/conways-game-of-life/)** ·
 **[Extended version](https://technikweber.github.io/conways-game-of-life/conways_game_of_life_extended.html)**
 
+<table>
+  <tr>
+    <td align="center"><a href="docs/screenshot.png"><img src="docs/screenshot.png" width="400" alt="Basic version: a Gosper glider gun after 89 generations, three gliders on their way"></a><br>Basic version</td>
+    <td align="center"><a href="docs/screenshot-extended.png"><img src="docs/screenshot-extended.png" width="400" alt="Extended version: a random field after 79 generations with age colours and the population graph"></a><br>Extended version</td>
+  </tr>
+</table>
+
 ## What is the Game of Life?
 
 Not a game in the usual sense, but a cellular automaton: a grid of cells that are either
